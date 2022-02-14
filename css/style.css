@@ -1,0 +1,38 @@
+body {
+    background-color: steelblue;
+}
+
+#refresh {
+    margin-bottom: 25px;
+}
+
+#container {
+    width: 615px;
+    height: 615px;
+    justify-self: center;
+    border: 1px solid whitesmoke;
+}
+
+#playerTurn{
+    display: inline;
+    margin-bottom: 25px;
+}
+
+#playerTurnNumber{
+    display: inline;
+    border: 1px solid whitesmoke;
+}
+
+/* #playerContainer {
+    
+} */
+
+.gridSquare {
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    cursor: pointer;
+    justify-self: center;
+}
