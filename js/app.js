@@ -20,6 +20,20 @@ const detectWinner = () => {
     const player = pTurnValue.innerText
     if (grid[0].innerText === player && grid[3].innerText === player && grid[6].innerText === player){
         return true
+    } else if (grid[0].innerText === player && grid[1].innerText === player && grid[2].innerText === player){
+        return true
+    } else if (grid[0].innerText === player && grid[4].innerText === player && grid[8].innerText === player){
+        return true
+    } else if (grid[3].innerText === player && grid[4].innerText === player && grid[5].innerText === player){
+        return true
+    } else if (grid[6].innerText === player && grid[7].innerText === player && grid[8].innerText === player){
+        return true
+    } else if (grid[1].innerText === player && grid[4].innerText === player && grid[7].innerText === player){
+        return true
+    } else if (grid[2].innerText === player && grid[5].innerText === player && grid[8].innerText === player){
+        return true
+    } else if (grid[2].innerText === player && grid[4].innerText === player && grid[6].innerText === player){
+        return true
     } else {
         return false
     }
