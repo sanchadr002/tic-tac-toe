@@ -54,7 +54,7 @@ const detectTie = () => {
 const addXorO = (event) => {
     // if square already has value don't add anything
     const square = event.target
-    square.innerText = pTurnValue.innerText
+    square.textContent = pTurnValue.textContent
 }
 
 // create the 9 squares from the single div
@@ -83,10 +83,15 @@ const createSquares = () => {for (let i = 0; i < 9; i++) {
         } else {
             winner = pTurnValue.innerText
             gameOver = true
+            document.getElementById('winnerMessage').innerText = `Player ${winner} wins!`
         }
         
     })
 }}
+
+if (gameOver === true) {
+    document.getElementById('winnerMessage').innerText = `Player ${pTurnValue} wins!`
+}
 
 // function to change player turns
 const setPlayerTurn = () => {

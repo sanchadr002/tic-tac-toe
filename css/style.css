@@ -9,7 +9,7 @@ body {
 #container {
     width: 615px;
     height: 615px;
-    justify-self: center;
+    align-self: center;
     border: 1px solid whitesmoke;
 }
 
